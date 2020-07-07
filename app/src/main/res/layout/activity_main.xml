@@ -26,7 +26,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:background="@color/colorPrimary"
-        android:onClick="onClickTraining"
+        android:onClick="onClickTrainingButton"
         android:text="プッシュアップ"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_select_training_title" />
@@ -39,7 +39,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:background="@color/colorPrimary"
-        android:onClick="onClickTraining"
+        android:onClick="onClickTrainingButton"
         android:text="プルアップ"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_select_training_push_up" />
@@ -52,7 +52,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:background="@color/colorPrimary"
-        android:onClick="onClickTraining"
+        android:onClick="onClickTrainingButton"
         android:text="ブリッジ"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_select_training_pull_up" />
@@ -64,7 +64,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorPrimary"
-        android:onClick="onClickTraining"
+        android:onClick="onClickTrainingButton"
         android:text="スクワット"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_select_training_title" />
@@ -76,7 +76,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorPrimary"
-        android:onClick="onClickTraining"
+        android:onClick="onClickTrainingButton"
         android:text="レッグレイズ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_select_training_squat" />
@@ -88,7 +88,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorPrimary"
-        android:onClick="onClickTraining"
+        android:onClick="onClickTrainingButton"
         android:text="ハンドスタンドプッシュアップ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_select_training_leg_raise" />

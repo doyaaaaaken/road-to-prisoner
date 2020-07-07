@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     /**
      * click training menu button
      */
-    fun onClickTraining(view: View) {
+    fun onClickTrainingButton(view: View) {
         val trainingType = when(view.id) {
             R.id.btn_select_training_push_up -> TrainingType.PUSH_UP
             R.id.btn_select_training_squat -> TrainingType.SQUAT
