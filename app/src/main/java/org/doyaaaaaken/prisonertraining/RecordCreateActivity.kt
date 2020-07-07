@@ -13,7 +13,7 @@ class RecordCreateActivity : AppCompatActivity() {
 
         val trainingType = TrainingType.valueOf(intent.getStringExtra(EXTRA_MESSAGE))
         findViewById<TextView>(R.id.text_create_record_title).apply {
-            text = trainingType.displayName
+            text = "${trainingType.displayName}の記録"
         }
     }
 }
