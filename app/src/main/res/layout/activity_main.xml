@@ -9,11 +9,11 @@
 
     <TextView
         android:id="@+id/text_select_training_title"
-        android:layout_width="240dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:text="トレーニングの記録"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:textSize="24sp"
+        android:text="トレーニングの記録"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         android:layout_width="152dp"
         android:layout_height="96dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:background="@color/colorPrimary"
         android:onClick="onClickTraining"
         android:text="プッシュアップ"
@@ -61,7 +61,7 @@
         android:id="@+id/btn_select_training_squat"
         android:layout_width="152dp"
         android:layout_height="96dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorPrimary"
         android:onClick="onClickTraining"

@@ -12,8 +12,8 @@ class RecordCreateActivity : AppCompatActivity() {
         setContentView(R.layout.activity_display_message)
 
         val trainingType = TrainingType.valueOf(intent.getStringExtra(EXTRA_MESSAGE))
-        findViewById<TextView>(R.id.textView).apply {
-            text = trainingType.name
+        findViewById<TextView>(R.id.text_create_record_title).apply {
+            text = trainingType.displayName
         }
     }
 }
