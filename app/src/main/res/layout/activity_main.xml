@@ -8,9 +8,9 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="232dp"
-        android:layout_height="53dp"
+        android:id="@+id/text_select_training_title"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:text="トレーニングの記録"
         android:textSize="24sp"
@@ -19,83 +19,78 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_select_training_push_up"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="151dp"
-        android:layout_height="95dp"
+        android:layout_width="152dp"
+        android:layout_height="96dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:background="@color/colorPrimary"
+        android:onClick="onClickTraining"
         android:text="プッシュアップ"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_select_training_title" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btn_select_training_pull_up"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="151dp"
-        android:layout_height="95dp"
+        android:layout_width="152dp"
+        android:layout_height="96dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:background="@color/colorPrimary"
+        android:onClick="onClickTraining"
         android:text="プルアップ"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_training_push_up" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btn_select_training_bridge"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="151dp"
-        android:layout_height="95dp"
+        android:layout_width="152dp"
+        android:layout_height="96dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:background="@color/colorPrimary"
+        android:onClick="onClickTraining"
         android:text="ブリッジ"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_training_pull_up" />
 
     <Button
-        android:id="@+id/button8"
-        android:layout_width="151dp"
-        android:layout_height="95dp"
+        android:id="@+id/btn_select_training_squat"
+        android:layout_width="152dp"
+        android:layout_height="96dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorPrimary"
+        android:onClick="onClickTraining"
         android:text="スクワット"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_select_training_title" />
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="151dp"
-        android:layout_height="95dp"
+        android:id="@+id/btn_select_training_leg_raise"
+        android:layout_width="152dp"
+        android:layout_height="96dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorPrimary"
-        android:text="プッシュアップ"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="151dp"
-        android:layout_height="95dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/colorPrimary"
+        android:onClick="onClickTraining"
         android:text="レッグレイズ"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_training_squat" />
 
     <Button
-        android:id="@+id/button11"
-        android:layout_width="151dp"
-        android:layout_height="95dp"
+        android:id="@+id/btn_select_training_hand_stand_push_up"
+        android:layout_width="152dp"
+        android:layout_height="96dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorPrimary"
+        android:onClick="onClickTraining"
         android:text="ハンドスタンドプッシュアップ"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_training_leg_raise" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.view.View
-import android.widget.EditText
+import org.doyaaaaaken.prisonertraining.model.TrainingType
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,12 +14,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    /** Called when the user taps the Send button */
-    fun sendMessage(view: View) {
-        val editText = findViewById<EditText>(R.id.editText)
-        val message = editText.text.toString()
-        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
-            putExtra(EXTRA_MESSAGE, message)
+    /**
+     * click training menu button
+     */
+    fun onClickTraining(view: View) {
+        val trainingType = when(view.id) {
+            R.id.btn_select_training_push_up -> TrainingType.PUSH_UP
+            R.id.btn_select_training_squat -> TrainingType.SQUAT
+            R.id.btn_select_training_pull_up -> TrainingType.PULL_UP
+            R.id.btn_select_training_leg_raise -> TrainingType.LEG_RAISE
+            R.id.btn_select_training_bridge -> TrainingType.BRIDGE
+            R.id.btn_select_training_hand_stand_push_up -> TrainingType.HAND_STAND_PUSH_UP
+            else -> error("undefined type. ${view.id}")
+        }
+        val intent = Intent(this, RecordCreateActivity::class.java).apply {
+            putExtra(EXTRA_MESSAGE, trainingType.name)
         }
         startActivity(intent)
     }
