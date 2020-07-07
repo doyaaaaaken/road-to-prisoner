@@ -119,4 +119,18 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/text_create_record_third_set_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/text_create_record_third_set_label" />
+
+    <EditText
+        android:id="@+id/input_create_record_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:lines="2"
+        android:inputType="textMultiLine"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_create_record_comment_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_create_record_comment_label" />
 </androidx.constraintlayout.widget.ConstraintLayout>
