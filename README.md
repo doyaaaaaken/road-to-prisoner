@@ -1,2 +1,2 @@
 # road-to-prisoner
-Android app to record prisoner training activity
+Android app to record prisoner training activities
