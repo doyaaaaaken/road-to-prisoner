@@ -29,6 +29,16 @@
         android:onClick="onClickRecordCreateButton"
         app:srcCompat="@android:drawable/ic_input_add" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_list_record"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:listitem="@layout/recyclerview_item"
+        app:layout_constraintBottom_toTopOf="@+id/btn_list_record_create_record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_list_record_title" />
+
     <!-- TODO: レコードの一覧を並べる   -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
